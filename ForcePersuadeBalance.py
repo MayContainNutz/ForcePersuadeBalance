@@ -15,7 +15,7 @@ def calcSuccess(attacker,defender):
         sumOfBonus = 0
         for x in range(0,(100-(attackerStat-defenderStat))):
             sumOfBonus += x
-        return ((sumOfBonus/float(10000)))*100 
+        return (1-(sumOfBonus/float(10000)))*100 
     else:
         sumOfBonus = 0
         for x in range(0, 98 + (attackerStat-defenderStat)):
